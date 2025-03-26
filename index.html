@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_con_tiempo</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <head>
+        <h1>Formulario de registro</h1>
+    </head>
+    <div>
+        <label for="email">Introduce un email</label>
+        <input type="email" id="email" pattern=".+@example\.com" required />
+        <input type="button" value="Validar">
+    </div>
+    <div>
+        <label for="pass">Introduce una contraseña (10-15 caracteres):</label>
+        <p>La contraseña debe tener lo siguiente (Todo obligatorio): al menos dos mayúsculas, al menos un carácter de los siguientes: * / - # ~, al menos tres números entre 5 y 9 y tamaño de entre 10 y 15</p>
+        <input type="password" id="contraseña" name="password" minlength="10" maxlength="15" required />
+        <input type="button" value="Validar" onclick="validacionContraseña();">
+        <div>
+            <label for="pass">Introduce una contraseña (10-15 caracteres):</label>
+            <input type="password" id="contraseña2" name="password" minlength="10" maxlength="15" required />
+            <input type="button" value="Validar" onclick="comprobacionContraseña();">
+        </div>
+    </div>
+</body>
+
+</html>
